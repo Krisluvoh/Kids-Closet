@@ -3,6 +3,7 @@ import Cart from "../routes/Cart"
 import Home from "../routes/Home"
 import Login from "../routes/Login"
 import Shop from "../routes/Shop"
+import Orders from "../routes/Orders"
 import ProductRoute from "../routes/ProductRoute"
 
 import { Link } from "react-router-dom"
@@ -43,6 +44,12 @@ export const router = {
         {
             path: '/product/:id',
             component: <ProductRoute />
+        },
+        {
+            path: '/orders',
+            component: <Orders />,
+            text: 'Your orders',
+            loggedIn: true
         }
     ]
 }

@@ -3,7 +3,7 @@ import { useEffect, useState } from "react"
 import { ezFetch } from "../lib/api"
 
 import { Store, useAtom } from "../lib/store"
-import { pushToStore } from "../lib/api"
+import { pushToStore, setCart } from "../lib/api"
 
 export default function ProductRoute() {
 
@@ -16,13 +16,18 @@ export default function ProductRoute() {
     .find(p => p._id == product?._id)
 
   function addToCart() {
-    pushToStore($store, 'cart', product)
+    $store(current => {
+      current.cart.push(product)
+      setCart(current.cart)
+      return {...current}
+    })
   }
 
   function removeFromCart() {
     $store(current => {
       const index = current.cart.findIndex(p => p._id == product._id)
       current.cart.splice(index, 1)
+      setCart(current.cart)
       return {...current}
     })
   }

@@ -83,7 +83,8 @@ app.get('/api/authenticate', async (req, res) => {
         res.status(400).send({msg: "Invalid user"})
         return
     }
-    res.json({username})
+    const orders = await Order.find({username})
+    res.json({username, orders})
 })
 
 // PLACE ORDER ROUTE
@@ -108,8 +109,8 @@ mongoose.connect(MONGO_URL)
             `)
         })
 
-        let orders = await Order.find({})
-        console.log(orders)
+        // let orders = await Order.find({})
+        // console.log(orders)
 
         // await Order.deleteMany({})
     })

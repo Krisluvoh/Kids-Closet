@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import { router } from './components/Nav'
 
 import { useEffect, useState } from 'react'
-import { ezFetch, getUser, updateStore } from './lib/api'
+import { ezFetch, getUser, updateStore, getCart } from './lib/api'
 
 // Store is where the global state is
 import { Store, useAtom } from './lib/store'
@@ -24,6 +24,7 @@ function App() {
         $store(current => {
           return {
             ...current,
+            cart: getCart(),
             products
           }
         })
@@ -31,6 +32,7 @@ function App() {
 
     getUser()
       .then(user => {
+        console.log(user)
         updateStore($store, {user})
       })
   },[])
