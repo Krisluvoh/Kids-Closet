@@ -1,7 +1,7 @@
 
 // npm i express mongoose cors
 /*
-    git add . && git commit -m 'added dependencies' && git push origin main
+    git add . && git commit -m 'removed dist from frontend gitignore' && git push origin main
 */
 
 
