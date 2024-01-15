@@ -1,0 +1,8 @@
+{
+    "scripts": {
+        "update": "node models/init"
+    },
+    "dependencies": {
+        "jsonwebtoken": "^9.0.2"
+    }
+}

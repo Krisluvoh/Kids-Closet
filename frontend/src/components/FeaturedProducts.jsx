@@ -3,9 +3,8 @@
 import Carousel from 'react-bootstrap/Carousel'
 import { randomImage } from '../lib/lib'
 
-import { useAtom } from 'jotai'
 // Store is where the global state is
-import Store from '../lib/store'
+import {Store, useAtom} from '../lib/store'
 
 export default function FeaturedProducts() {
 
@@ -18,7 +17,7 @@ export default function FeaturedProducts() {
         <div id='featured-products_images'>
             {featured.map(p => {
                 return ( 
-                    <img key={p.name} src={"/img/"+p.img} alt="" />
+                    <img key={p.name} src={p.img} alt="" />
                 )
             })}
         </div>

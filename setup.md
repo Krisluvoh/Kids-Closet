@@ -19,3 +19,8 @@ then, to start up
         (make sure you are cd'd into frontend)
 
 When pushing to github, make sure you are not in the frontend folder.
+
+When deploying, before pushing to github
+
+1. change DEV to false in the frontend/src/lib/api
+2. cd frontend && npm run build

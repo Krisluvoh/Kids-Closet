@@ -1,7 +1,13 @@
-import { atom } from 'jotai'
+import { atom, useAtom } from 'jotai'
 
 const Store = atom({
-    products: []
+    products: [],
+    cart: [],
+    user: {}
 })
 
-export default Store
+
+export {
+    Store,
+    useAtom
+}
