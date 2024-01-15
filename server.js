@@ -1,5 +1,8 @@
-// nodemon server
-// npm i jsonwebtoken
+
+// npm i express mongoose cors
+/*
+    git add . && git commit -m 'added dependencies' && git push origin main
+*/
 
 
 // expose environment variables
