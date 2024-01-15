@@ -13,6 +13,9 @@ first time setup
 then, to start up
 
 1. in the backend terminal, run
-    node --watch server
+    nodemon server
 2. in the frontend terminal, run
     npm run dev
+        (make sure you are cd'd into frontend)
+
+When pushing to github, make sure you are not in the frontend folder.
