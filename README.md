@@ -2,10 +2,6 @@
 
 Welcome to Kids' Closet, my E-Commerce platform focused on reselling children's gently used clothing, shoes and accessories, built with the MERN (MongoDB, Express.js, React, Node.js) stack. This full-stack application utilizes technologies such as JWT for authentication, AJAX for asynchronous requests, and follows CRUD operations for seamless user interaction.
 
-## Website 
-![Kids' Closet](https://kidss-closet.onrender.com)
-
-
 ## Technologies Used
 - MongoDB: NoSQL database for efficient data storage.
 - Express.js: Web application framework for Node.js.
@@ -33,4 +29,4 @@ This project serves as a foundation for a more sophisticated platform. Future en
 - Implementing a user feedback system for seller and buyer reviews.
 
 ## GitHub Repository
-Explore our GitHub repository [GitHub](https://github.com/Krisluvoh/Kids-Closet.git) to access the complete codebase. We maintain a transparent development process with frequent commits (at least 10) to showcase the evolution of our project. Feel free to contribute and share your thoughts!
+Explore our GitHub repository [GitHub](https://github.com/Krisluvoh/Kids-Closet.git) to access the complete codebase. We maintain a transparent development process with frequent commits to showcase the evolution of our project. Feel free to contribute and share your thoughts!
