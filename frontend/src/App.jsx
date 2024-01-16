@@ -11,6 +11,7 @@ import { Store, useAtom } from './lib/store'
 // https://mui.com/material-ui/getting-started/
 // npm i jotai
 
+import Footer from './components/Footer.jsx'
 import Nav from "./components/Nav"
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
           })}
         </Routes>
       </main>
+      <Footer />
     </>
   )
 }

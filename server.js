@@ -12,8 +12,28 @@ const { MONGO_URL, SECRET } = process.env
 // JWT Stuff
 const { verify, sign } = require('jsonwebtoken')
 
-const signToken = token => sign(token, SECRET)
-const verifyToken = token => verify(token, SECRET)
+const signToken = token => {
+    let result
+    try {
+        result = sign(token, SECRET)
+    }
+    catch {
+        console.log('error signing token')
+        result = ""
+    }
+    return result
+}
+const verifyToken = token => {
+    let result
+    try {
+        result = verify(token, SECRET)
+    }
+    catch {
+        console.log('error verifying token')
+        result = ""
+    }
+    return result
+}
 
 const mongoose = require('mongoose')
 const express = require('express')

@@ -1,7 +1,7 @@
 // npm i react-bootstrap
 
-import Carousel from 'react-bootstrap/Carousel'
-import { randomImage } from '../lib/lib'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Carousel} from 'react-responsive-carousel'
 
 // Store is where the global state is
 import {Store, useAtom} from '../lib/store'
@@ -14,12 +14,17 @@ export default function FeaturedProducts() {
   return (
     <section id="featured-products">
         <h2>Featured Products</h2>
+        <hr />
         <div id='featured-products_images'>
-            {featured.map(p => {
-                return ( 
-                    <img key={p.name} src={p.img} alt="" />
-                )
-            })}
+            <Carousel width="200px">
+                {featured.map(p => {
+                    return (
+                        <div key={p.name}>
+                            <img src={p.img} alt="" />
+                        </div>
+                    )
+                })}
+            </Carousel>
         </div>
     </section>
   )
