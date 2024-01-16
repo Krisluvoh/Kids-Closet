@@ -1,0 +1,39 @@
+#categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
+    & img {
+        width: 100%;
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+    & .images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.category {
+    cursor: pointer;
+
+    & img {
+        transition: all 250ms;
+    }
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+}
+
+#featured-products {}
+
+#featured-products_images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.carousel-slider {
+    margin: auto !important;
+}

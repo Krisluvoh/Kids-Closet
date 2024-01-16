@@ -86,8 +86,8 @@ export default function Nav() {
                         Sign out
                     </button>
                 )}
-                <div className="cart">
-                    {store.cart.length}
+                <div id="nav-cart">
+                    Items in cart: {store.cart.length}
                 </div>
             </ul>
         </nav>

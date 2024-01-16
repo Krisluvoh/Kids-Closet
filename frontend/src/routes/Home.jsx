@@ -32,7 +32,7 @@ export default function Home() {
                         <div className="category" key={name}>
                             <div className="images">
                                 {products.map(p => (
-                                    <img src={p.img} />
+                                    <img key={p.img} src={p.img} />
                                 ))}
                             </div>
                             <p>{name}</p>

@@ -1,0 +1,21 @@
+
+
+#cart-items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  .cart-item {
+    border: 1px solid black;
+    padding: .5rem;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  
+    align-items: flex-start;
+  
+    & img {
+      width: 100%;
+    }
+  }
