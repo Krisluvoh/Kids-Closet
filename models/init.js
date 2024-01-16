@@ -44,22 +44,24 @@ mongoose.connect(MONGO_URL)
         // })
 
         // watch for updates
+        // return
         initialProducts.forEach(async p => {
-            const match = await Product.findOne(p)
-            if (match) {
-                console.log("Match found. Not updating.")
-                logTotal()
-                return
-            }
-            Product.findOneAndUpdate({name: p.name}, p)
-                .then(()=>{
-                    console.log('Updated ' + p.name)
-                    logTotal()
-                })
-                .catch(err => {
-                    console.log('Failed updating ' + p.name)
-                    console.log(err)
-                })
+            // const match = await Product.findOne(p)
+            // if (match) {
+            //     console.log("Match found. Not updating.")
+            //     logTotal()
+            //     return
+            // }
+            // Product.findOneAndUpdate({name: p.name}, p)
+            //     .then(()=>{
+            //         console.log('Updated ' + p.name)
+            //         logTotal()
+            //     })
+            //     .catch(err => {
+            //         console.log('Failed updating ' + p.name)
+            //         console.log(err)
+            //     })
+            Product.create(p)
         })
 
     })
