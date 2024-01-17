@@ -20,6 +20,7 @@ To get started, check out our [Trello Board](https://trello.com/invite/b/ZFxIH9O
 ## Unsolved Problems
 - Incorporating real-time notifications for user interactions.
 - Optimizing performance for a larger number of concurrent users.
+- Adding functionality to able to remove products from the cart without having to go back to "Shop" to remove. 
 
 ## Future Enhancements
 This project serves as a foundation for a more sophisticated platform. Future enhancements may include:
@@ -27,6 +28,9 @@ This project serves as a foundation for a more sophisticated platform. Future en
 - Integration of a shipping gateway for seamless delivery.
 - Enhanced recommendation engine based on user preferences.
 - Implementing a user feedback system for seller and buyer reviews.
+- Adding carousel effect for featured products.
+- Creating a seperate API to update product content.
+- Better more asthetic visuals.
 
 ## GitHub Repository
 Explore our GitHub repository [GitHub](https://github.com/Krisluvoh/Kids-Closet.git) to access the complete codebase. We maintain a transparent development process with frequent commits to showcase the evolution of our project. Feel free to contribute and share your thoughts!
