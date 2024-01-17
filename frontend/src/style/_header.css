@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  
+    background-color: var(--primary-color);
+    color: white;
+  
+    & a {
+      color: white;
+      display: inline-block;
+      padding: 1rem;
+  
+      &:hover {
+        background-image: radial-gradient(rgba(255,255,255,0.1), transparent);
+      }
+    }
+  }
+  
+  header nav {
+    & ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0;
+    }
+  
+    & #nav-cart {
+      opacity: 0.4;
+    }
+  }
